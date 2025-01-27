@@ -1,0 +1,216 @@
+body{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color:#1d232c;
+}
+
+.navbar-links a:hover{
+    text-decoration:underline ;
+    color: #1d232c;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+.side-navbar{
+    background-color: #1d232c;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    color: white;
+    padding: 25px;
+    transition: 2s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+
+.header{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.header button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1d232c;
+    color: white;
+}
+
+.Service{
+    padding: 20px;
+}
+.service-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-left: 20px;
+    
+}
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 10px;
+    padding: 10px;
+
+    
+}
+.new-arrivals{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+.arrival-container{
+    position: relative;
+    flex-basis: 20%;
+    
+}
+.arrival-container button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border: none;
+
+
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news input{
+    padding: 10px;
+    width: 80vw;
+    border-style: solid black 3px;
+
+}
+.news button{
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1d232c;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer{
+    margin-top: 20px;
+    background-color: #1d232c;
+    padding: 40px;
+    color: #f2f4f7;
+}
+
+.profuct-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black 3px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+.product-search input{
+    border: none;
+    border-color: transparent;
+    width: 100%;
+
+}
+.product-search input:focus{
+    outline: none;
+
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 25%;
+}
+.products img{
+    border-radius: 10px;
+}
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+}
